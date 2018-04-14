@@ -13,6 +13,10 @@
 		CD9CBC8B20777E5500054D2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD9CBC8A20777E5500054D2A /* Assets.xcassets */; };
 		CD9CBC8E20777E5500054D2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD9CBC8C20777E5500054D2A /* LaunchScreen.storyboard */; };
 		CDB3EFC5207B237C00B7CC58 /* VVProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB3EFC4207B237C00B7CC58 /* VVProfileViewController.swift */; };
+		CDF1E3E0208191BE00D38569 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF1E3DF208191BE00D38569 /* SignUpViewController.swift */; };
+		CDF1E3E2208191E500D38569 /* ForgotPswrdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF1E3E1208191E500D38569 /* ForgotPswrdViewController.swift */; };
+		CDF1E3E42081922400D38569 /* HomepageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF1E3E32081922400D38569 /* HomepageViewController.swift */; };
+		CDF1E3E82081C22000D38569 /* UpdatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF1E3E72081C22000D38569 /* UpdatesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		CD9CBC8D20777E5500054D2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD9CBC8F20777E5500054D2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDB3EFC4207B237C00B7CC58 /* VVProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VVProfileViewController.swift; sourceTree = "<group>"; };
+		CDF1E3DF208191BE00D38569 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		CDF1E3E1208191E500D38569 /* ForgotPswrdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPswrdViewController.swift; sourceTree = "<group>"; };
+		CDF1E3E32081922400D38569 /* HomepageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageViewController.swift; sourceTree = "<group>"; };
+		CDF1E3E72081C22000D38569 /* UpdatesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +67,10 @@
 				CD9CBC8320777E5500054D2A /* AppDelegate.swift */,
 				CD9CBC8520777E5500054D2A /* ViewController.swift */,
 				CD9CBC8720777E5500054D2A /* Main.storyboard */,
+				CDF1E3E72081C22000D38569 /* UpdatesViewController.swift */,
+				CDF1E3E32081922400D38569 /* HomepageViewController.swift */,
+				CDF1E3E1208191E500D38569 /* ForgotPswrdViewController.swift */,
+				CDF1E3DF208191BE00D38569 /* SignUpViewController.swift */,
 				CDB3EFC4207B237C00B7CC58 /* VVProfileViewController.swift */,
 				CD9CBC8A20777E5500054D2A /* Assets.xcassets */,
 				CD9CBC8C20777E5500054D2A /* LaunchScreen.storyboard */,
@@ -141,6 +153,10 @@
 			files = (
 				CDB3EFC5207B237C00B7CC58 /* VVProfileViewController.swift in Sources */,
 				CD9CBC8620777E5500054D2A /* ViewController.swift in Sources */,
+				CDF1E3E82081C22000D38569 /* UpdatesViewController.swift in Sources */,
+				CDF1E3E42081922400D38569 /* HomepageViewController.swift in Sources */,
+				CDF1E3E0208191BE00D38569 /* SignUpViewController.swift in Sources */,
+				CDF1E3E2208191E500D38569 /* ForgotPswrdViewController.swift in Sources */,
 				CD9CBC8420777E5500054D2A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
