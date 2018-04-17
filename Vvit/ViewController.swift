@@ -20,7 +20,6 @@ class ViewController: UIViewController {
         userName.text = "avu@gmail.com"
         password.text = "123456789"
         self.title = "VVISM"
-        label.isHidden = true
     }
   
     //MARK:login Action
@@ -53,15 +52,15 @@ class ViewController: UIViewController {
                     self.performSegue(withIdentifier: "loginSegue", sender: nil)
                 }
                 else {
-                    showAlertWithTitleAndMessage(title: "ABC", message: "Please enter password manimum of 8 characters")
+                    showAlertWithTitleAndMessage(title: "Alert", message: "Please enter password manimum of 8 characters")
                 }
             }
             else {
-                showAlertWithTitleAndMessage(title: "ABC", message: "Please enter a valid email!")
+                showAlertWithTitleAndMessage(title: "Alert", message: "Please enter a valid email!")
             }
         }
         else {
-            showAlertWithTitleAndMessage(title: "ABC", message: "Please enter email!")
+            showAlertWithTitleAndMessage(title: "Alert", message: "Please enter email!")
         }
         
         

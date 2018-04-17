@@ -11,7 +11,6 @@ import UIKit
 class SignUpViewController: UIViewController {
     
     //MARK:Outlets
-    @IBOutlet weak var signupAlertLabel: UILabel!
     
     @IBOutlet weak var SignupUserName: UITextField!
     @IBOutlet weak var SignupGmail: UITextField!
@@ -22,7 +21,7 @@ class SignUpViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        signupAlertLabel.isHidden = true
+    
         // Do any additional setup after loading the view.
         SignupUserName.text = "abc"
         SignupGmail.text = "123@gmail.com"
@@ -34,8 +33,7 @@ class SignUpViewController: UIViewController {
     //MARK:REGISTERATION FOR USERS
     
     @IBAction func registerationForUser(_ sender: Any) {
-        signupAlertLabel.isHidden = true
-        guard let  signUPtxtUsername = SignupUserName.text, signUPtxtUsername.count != 0 else {
+            guard let  signUPtxtUsername = SignupUserName.text, signUPtxtUsername.count != 0 else {
             showAlertWithTitleAndMessage(title: "Alert", message: "Please enter Username")
             return
         }
@@ -50,12 +48,12 @@ class SignUpViewController: UIViewController {
             showAlertWithTitleAndMessage(title: "Alert", message: "Please enter email")
             return
         }
-        guard let  signUptxtpassword = SignupPassword.text, signUptxtpassword.count != 8 else {
+        guard let  signUptxtpassword = SignupPassword.text, signUptxtpassword.count > 8 else {
             showAlertWithTitleAndMessage(title: "Alert", message: "Please enter Password")
 
             return
         }
-        guard let  signUptxtRepassword = SignuoReEnterPassword.text, signUptxtRepassword.count != 8 else {
+        guard let  signUptxtRepassword = SignuoReEnterPassword.text, signUptxtRepassword.count > 8 else {
             showAlertWithTitleAndMessage(title: "Alert", message: "Please Re-enter Password")
 
             return
