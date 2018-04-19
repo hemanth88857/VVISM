@@ -15,7 +15,7 @@ class EditProfileViewController: UIViewController,UIImagePickerControllerDelegat
     @IBOutlet weak var ChangePhotoOutlet: UIImageView!
      let imagePicker = UIImagePickerController()
     
-    @IBOutlet weak var editUserName: UITextField!
+    @IBOutlet weak var editName: UITextField!
     
     
     
@@ -52,7 +52,39 @@ class EditProfileViewController: UIViewController,UIImagePickerControllerDelegat
         self.present(imagePicker, animated: true, completion: nil)
     }
     
-   
+    //MARK: UpdateButton
+    @IBAction func updateButton(_ sender: UIButton) {
+        guard let  editUserNameTxtUsername = editName.text, editUserNameTxtUsername.count >= 4 else {
+            showAlertWithTitleAndMessage(title: "Alert", message: "Please enter New Name")
+            return
+        }
+        showAlertWithTitleAndMessageWithAction(title: "Alert", message: "Name has been Updated Successfully")
+    }
+    
+    //MARK:  functions for Alerts
+    func showAlertWithTitleAndMessage(title:String, message:String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    func showAlertWithTitleAndMessageWithAction(title:String, message:String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler:{ action in
+            switch action.style{
+            case .default:
+                self.navigationController?.popToRootViewController(animated: true)
+                
+            case .cancel:
+                print("cancel")
+                
+            case .destructive:
+                print("destructive")
+                
+                
+            }}))
+        self.present(alert, animated: true, completion: nil)
+    }
     
     /*
     // MARK: - Navigation

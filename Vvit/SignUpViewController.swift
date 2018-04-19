@@ -73,7 +73,7 @@ class SignUpViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+     //MARK:  functions for Email Validation
     func isValidEmailAddress(emailAddressString: String) -> Bool {
         
         var returnValue = true
@@ -96,6 +96,7 @@ class SignUpViewController: UIViewController {
         
         return  returnValue
     }
+    //MARK:  functions for Alerts
     func showAlertWithTitleAndMessage(title:String, message:String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))

@@ -9,12 +9,19 @@
 import UIKit
 
 class VVProfileViewController: UIViewController {
-
+ @IBOutlet weak var profilePhoto: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        profilePhoto.layer.borderWidth=1.0
+        profilePhoto.layer.masksToBounds = false
+        profilePhoto.layer.borderColor = UIColor.white.cgColor
+        profilePhoto.layer.cornerRadius = profilePhoto.frame.size.height/2
+        profilePhoto.clipsToBounds = true
     }
+    
+   
     
     
     override func didReceiveMemoryWarning() {
