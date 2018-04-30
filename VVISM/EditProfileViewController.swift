@@ -8,7 +8,7 @@
 
 import UIKit
 
-class EditProfileViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
+class EditProfileViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate, UITextFieldDelegate {
 
     //MARK:Outlets
     
@@ -24,7 +24,7 @@ class EditProfileViewController: UIViewController,UIImagePickerControllerDelegat
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-       
+       editName.delegate = self
         imagePicker.delegate = self
         
     }
@@ -54,10 +54,13 @@ class EditProfileViewController: UIViewController,UIImagePickerControllerDelegat
     
     //MARK: UpdateButton
     @IBAction func updateButton(_ sender: UIButton) {
-        guard let  editUserNameTxtUsername = editName.text, editUserNameTxtUsername.count >= 4 else {
-            showAlertWithTitleAndMessage(title: "Alert", message: "Please enter New Name")
+        guard let  editUserNameTxtUsername = editName.text, editUserNameTxtUsername.count > 2 else {
+    
+            showAlertWithTitleAndMessage(title: "Alert", message: "Please enter a valid Name")
             return
         }
+        
+       
         showAlertWithTitleAndMessageWithAction(title: "Alert", message: "Name has been Updated Successfully")
     }
     
@@ -73,8 +76,7 @@ class EditProfileViewController: UIViewController,UIImagePickerControllerDelegat
         alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler:{ action in
             switch action.style{
             case .default:
-                self.navigationController?.popToRootViewController(animated: true)
-                
+                self.navigationController?.popViewController(animated: true)
             case .cancel:
                 print("cancel")
                 
@@ -86,6 +88,24 @@ class EditProfileViewController: UIViewController,UIImagePickerControllerDelegat
         self.present(alert, animated: true, completion: nil)
     }
     
+    
+    // MARK : function for alphabets validation
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        
+        if textField == editName {
+            let characterSet = CharacterSet.letters
+            
+            if string.rangeOfCharacter(from: .whitespaces) != nil {
+                return true
+            }
+            
+            if  string.rangeOfCharacter(from: characterSet.inverted) != nil {
+                return false
+            }
+        }
+        
+        return true
+    }
     /*
     // MARK: - Navigation
 

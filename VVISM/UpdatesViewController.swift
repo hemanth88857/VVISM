@@ -35,7 +35,7 @@ class UpdatesViewController: UIViewController,UITableViewDelegate, UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell:UITableViewCell = updatesTableView.dequeueReusableCell(withIdentifier: "updatesCell") as UITableViewCell!
+        let cell:UITableViewCell = (updatesTableView.dequeueReusableCell(withIdentifier: "updatesCell") as UITableViewCell?)!
         
         cell.textLabel?.text = self.Updates[indexPath.section]
         

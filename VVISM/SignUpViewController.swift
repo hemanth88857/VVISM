@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SignUpViewController: UIViewController {
+class SignUpViewController: UIViewController,UITextFieldDelegate {
     
     //MARK:Outlets
     
@@ -18,16 +18,21 @@ class SignUpViewController: UIViewController {
     
     @IBOutlet weak var SignuoReEnterPassword: UITextField!
     
+    @IBOutlet weak var hallTicket: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
     
         // Do any additional setup after loading the view.
-        SignupUserName.text = "abc"
+      //  SignupUserName.text = "abc"
+        hallTicket.text = "21261608416"
         SignupGmail.text = "123@gmail.com"
         SignupPassword.text = "123456789"
         SignuoReEnterPassword.text = "123456789"
         
+        
+        SignupUserName.delegate = self
+
     }
     
     //MARK:REGISTERATION FOR USERS
@@ -48,6 +53,11 @@ class SignUpViewController: UIViewController {
             showAlertWithTitleAndMessage(title: "Alert", message: "Please enter email")
             return
         }
+        guard let  hallTicketTxt  = hallTicket.text, hallTicketTxt.count > 11 else {
+            showAlertWithTitleAndMessage(title: "Alert", message: "Please enter a valid Hall-Ticket Number")
+            
+            return
+        }
         guard let  signUptxtpassword = SignupPassword.text, signUptxtpassword.count > 8 else {
             showAlertWithTitleAndMessage(title: "Alert", message: "Please enter Password")
 
@@ -64,7 +74,9 @@ class SignUpViewController: UIViewController {
             return
         }
         showAlertWithTitleAndMessageWithAction(title: "Alert", message: "User has been Created Successfully")
-//        self.navigationController?.popViewController(animated: true)
+        
+
+        //        self.navigationController?.popViewController(animated: true)
         
         
     }
@@ -119,6 +131,25 @@ class SignUpViewController: UIViewController {
                 
             }}))
         self.present(alert, animated: true, completion: nil)
+    }
+    
+    
+    // MARK : function for alphabets validation
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        
+        if textField == SignupUserName {
+            let characterSet = CharacterSet.letters
+            
+            if string.rangeOfCharacter(from: .whitespaces) != nil {
+                return true
+            }
+            
+            if  string.rangeOfCharacter(from: characterSet.inverted) != nil {
+                return false
+            }
+        }
+        
+        return true
     }
 
     /*

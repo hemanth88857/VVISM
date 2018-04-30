@@ -51,7 +51,8 @@ class ChangePasswordViewController: UIViewController {
             showAlertWithTitleAndMessage(title: "Alert", message: "Password Does not Match")
             return
         }
-        showAlertWithTitleAndMessageWithAction(title: "Alert", message: "User has been Created Successfully")
+        showAlertWithTitleAndMessageWithAction(title: "Alert", message: "Password  has been Changed Successfully")
+        
     }
     
     //MARK:  functions for Alerts
@@ -66,8 +67,9 @@ class ChangePasswordViewController: UIViewController {
         alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler:{ action in
             switch action.style{
             case .default:
+//                self.navigationController?.pushViewController(self.vc, animated: true)
           //   self.navigationController.pushViewController(HomepageViewController, animated: true)
-                self.navigationController?.popToRootViewController(animated: true)
+                self.navigationController?.popViewController(animated: true)
             case .cancel:
                 print("cancel")
                 
