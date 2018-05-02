@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="Vvit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="VVISM" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qvf-pe-hHr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -141,7 +141,7 @@
         <!--Homepage View Controller-->
         <scene sceneID="DwR-8g-C2o">
             <objects>
-                <viewController storyboardIdentifier="HomepageViewController" id="R2u-NT-hNF" customClass="HomepageViewController" customModule="Vvit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomepageViewController" id="R2u-NT-hNF" customClass="HomepageViewController" customModule="VVISM" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9Li-1C-vKg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -249,7 +249,7 @@
         <!--Change Password View Controller-->
         <scene sceneID="3Ht-kH-RvI">
             <objects>
-                <viewController storyboardIdentifier="ChangePasswordViewController" id="lZK-Kg-ycs" customClass="ChangePasswordViewController" customModule="Vvit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChangePasswordViewController" id="lZK-Kg-ycs" customClass="ChangePasswordViewController" customModule="VVISM" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WNI-Zg-1Hg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -328,7 +328,7 @@
         <!--Edit Profile View Controller-->
         <scene sceneID="RJl-2d-o4G">
             <objects>
-                <viewController storyboardIdentifier="EditProfileViewController" id="hub-yd-EnL" customClass="EditProfileViewController" customModule="Vvit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EditProfileViewController" id="hub-yd-EnL" customClass="EditProfileViewController" customModule="VVISM" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JII-8r-9kS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -410,7 +410,7 @@
         <!--Updates View Controller-->
         <scene sceneID="ncd-pd-Xae">
             <objects>
-                <viewController storyboardIdentifier="UpdatesViewController" id="afu-Ce-e53" customClass="UpdatesViewController" customModule="Vvit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UpdatesViewController" id="afu-Ce-e53" customClass="UpdatesViewController" customModule="VVISM" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zg7-vv-c15">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -557,7 +557,7 @@ Job Types: Full-time, Fresher
         <!--Profile View Controller-->
         <scene sceneID="xOf-v4-PDJ">
             <objects>
-                <viewController storyboardIdentifier="VVProfileViewController" id="gt4-2q-FjC" customClass="VVProfileViewController" customModule="Vvit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VVProfileViewController" id="gt4-2q-FjC" customClass="VVProfileViewController" customModule="VVISM" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="daZ-VA-sgM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -609,7 +609,7 @@ Job Types: Full-time, Fresher
         <!--Events View Controller-->
         <scene sceneID="18f-YU-HK3">
             <objects>
-                <viewController id="ZD5-1j-8VX" customClass="eventsViewController" customModule="Vvit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ZD5-1j-8VX" customClass="eventsViewController" customModule="VVISM" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yFt-z1-g5g">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -674,7 +674,7 @@ Job Types: Full-time, Fresher
         <!--Results View Controller-->
         <scene sceneID="Gbb-mF-pee">
             <objects>
-                <viewController id="S3d-FP-P8I" customClass="ResultsViewController" customModule="Vvit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="S3d-FP-P8I" customClass="ResultsViewController" customModule="VVISM" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FAu-Me-xoK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -739,7 +739,7 @@ Job Types: Full-time, Fresher
         <!--Fee Payments View Controller-->
         <scene sceneID="dzt-fL-O7d">
             <objects>
-                <viewController id="STf-oD-3oy" customClass="FeePaymentsViewController" customModule="Vvit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="STf-oD-3oy" customClass="FeePaymentsViewController" customModule="VVISM" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ha3-sh-Taz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -887,7 +887,7 @@ Job Types: Full-time, Fresher
         <!--Final Payment View Controller-->
         <scene sceneID="lOh-Du-t8i">
             <objects>
-                <viewController storyboardIdentifier="FinalPaymentViewController" id="WOv-al-jbT" customClass="FinalPaymentViewController" customModule="Vvit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FinalPaymentViewController" id="WOv-al-jbT" customClass="FinalPaymentViewController" customModule="VVISM" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d0d-Hg-mdD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1067,7 +1067,7 @@ Job Types: Full-time, Fresher
         <!--ExamsT Tand Sechudule View Controller-->
         <scene sceneID="sgj-PJ-drO">
             <objects>
-                <viewController id="w9X-VR-8vD" customClass="ExamsTTandSechuduleViewController" customModule="Vvit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="w9X-VR-8vD" customClass="ExamsTTandSechuduleViewController" customModule="VVISM" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1y4-W3-XhX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1103,7 +1103,7 @@ Job Types: Full-time, Fresher
         <!--Sign Up View Controller-->
         <scene sceneID="hzn-dg-Sj7">
             <objects>
-                <viewController storyboardIdentifier="SignUpViewController" id="ie8-e1-ocC" customClass="SignUpViewController" customModule="Vvit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUpViewController" id="ie8-e1-ocC" customClass="SignUpViewController" customModule="VVISM" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d1f-wA-6Aj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1210,7 +1210,7 @@ Job Types: Full-time, Fresher
         <!--Forgot Pswrd View Controller-->
         <scene sceneID="Ccv-vq-XC0">
             <objects>
-                <viewController storyboardIdentifier="ForgotPswrdViewController" id="2Yf-nY-QJA" customClass="ForgotPswrdViewController" customModule="Vvit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ForgotPswrdViewController" id="2Yf-nY-QJA" customClass="ForgotPswrdViewController" customModule="VVISM" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4Vp-P2-SQx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
