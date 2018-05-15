@@ -25,16 +25,19 @@ class SignUpViewController: UIViewController,UITextFieldDelegate {
     
         // Do any additional setup after loading the view.
       //  SignupUserName.text = "abc"
-        hallTicket.text = "21261608416"
-        SignupGmail.text = "123@gmail.com"
-        SignupPassword.text = "123456789"
-        SignuoReEnterPassword.text = "123456789"
+//        hallTicket.text = "21261608416"
+//        SignupGmail.text = "123@gmail.com"
+//        SignupPassword.text = "123456789"
+//        SignuoReEnterPassword.text = "123456789"
         
         
         SignupUserName.delegate = self
-
+        self.title = "SignUp"
+        
     }
     
+
+
     //MARK:REGISTERATION FOR USERS
     
     @IBAction func registerationForUser(_ sender: Any) {

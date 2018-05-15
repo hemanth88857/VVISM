@@ -51,10 +51,10 @@ class FeePaymentsViewController: UIViewController,UITableViewDelegate, UITableVi
         tableView.tableFooterView = UIView()
         tableView.isHidden = true
         
-        hallTicket.text = "12345678900"
-        name.text = "12ramu"
-        amount.text = "1234"
-        mobileNumber.text = "8885643432"
+//        hallTicket.text = "12345678900"
+//        name.text = "12ramu"
+//        amount.text = "1234"
+//        mobileNumber.text = "8885643432"
     }
     
     

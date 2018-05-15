@@ -13,6 +13,8 @@
 		CD1A3984208235BD00D1CDE3 /* ExamsTTandSechuduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1A3983208235BD00D1CDE3 /* ExamsTTandSechuduleViewController.swift */; };
 		CD1A3986208235F100D1CDE3 /* FeePaymentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1A3985208235F100D1CDE3 /* FeePaymentsViewController.swift */; };
 		CD1A398A2082726800D1CDE3 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1A39892082726800D1CDE3 /* EditProfileViewController.swift */; };
+		CD1C89A0209A1A6600E7CCA9 /* CardCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1C899F209A1A6600E7CCA9 /* CardCellTableViewCell.swift */; };
+		CD1C89A2209A27ED00E7CCA9 /* PhonePeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1C89A1209A27ED00E7CCA9 /* PhonePeTableViewCell.swift */; };
 		CD347BF22094E07600C3748E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD347BF12094E07600C3748E /* Assets.xcassets */; };
 		CD9CBC8420777E5500054D2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9CBC8320777E5500054D2A /* AppDelegate.swift */; };
 		CD9CBC8620777E5500054D2A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9CBC8520777E5500054D2A /* ViewController.swift */; };
@@ -21,6 +23,7 @@
 		CDAF4746209390B20070DD10 /* FinalPaymentPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAF4745209390B20070DD10 /* FinalPaymentPageViewController.swift */; };
 		CDAF474A20939A3D0070DD10 /* FinalPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAF474920939A3D0070DD10 /* FinalPaymentViewController.swift */; };
 		CDB3EFC5207B237C00B7CC58 /* VVProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB3EFC4207B237C00B7CC58 /* VVProfileViewController.swift */; };
+		CDCB2D0B20997A9A007D7C97 /* NetBankingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCB2D0A20997A9A007D7C97 /* NetBankingTableViewCell.swift */; };
 		CDF1E3E0208191BE00D38569 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF1E3DF208191BE00D38569 /* SignUpViewController.swift */; };
 		CDF1E3E2208191E500D38569 /* ForgotPswrdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF1E3E1208191E500D38569 /* ForgotPswrdViewController.swift */; };
 		CDF1E3E42081922400D38569 /* HomepageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF1E3E32081922400D38569 /* HomepageViewController.swift */; };
@@ -34,6 +37,8 @@
 		CD1A3983208235BD00D1CDE3 /* ExamsTTandSechuduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamsTTandSechuduleViewController.swift; sourceTree = "<group>"; };
 		CD1A3985208235F100D1CDE3 /* FeePaymentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeePaymentsViewController.swift; sourceTree = "<group>"; };
 		CD1A39892082726800D1CDE3 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		CD1C899F209A1A6600E7CCA9 /* CardCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCellTableViewCell.swift; sourceTree = "<group>"; };
+		CD1C89A1209A27ED00E7CCA9 /* PhonePeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhonePeTableViewCell.swift; sourceTree = "<group>"; };
 		CD347BF12094E07600C3748E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD9CBC8020777E5500054D2A /* VVISM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VVISM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD9CBC8320777E5500054D2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +49,7 @@
 		CDAF4745209390B20070DD10 /* FinalPaymentPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalPaymentPageViewController.swift; sourceTree = "<group>"; };
 		CDAF474920939A3D0070DD10 /* FinalPaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalPaymentViewController.swift; sourceTree = "<group>"; };
 		CDB3EFC4207B237C00B7CC58 /* VVProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VVProfileViewController.swift; sourceTree = "<group>"; };
+		CDCB2D0A20997A9A007D7C97 /* NetBankingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetBankingTableViewCell.swift; sourceTree = "<group>"; };
 		CDF1E3DF208191BE00D38569 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		CDF1E3E1208191E500D38569 /* ForgotPswrdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPswrdViewController.swift; sourceTree = "<group>"; };
 		CDF1E3E32081922400D38569 /* HomepageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +90,8 @@
 				CD9CBC8320777E5500054D2A /* AppDelegate.swift */,
 				CD9CBC8520777E5500054D2A /* ViewController.swift */,
 				CD9CBC8720777E5500054D2A /* Main.storyboard */,
+				CD1C89A1209A27ED00E7CCA9 /* PhonePeTableViewCell.swift */,
+				CD1C899F209A1A6600E7CCA9 /* CardCellTableViewCell.swift */,
 				CDAF474920939A3D0070DD10 /* FinalPaymentViewController.swift */,
 				CD1760D220845E0D0018D772 /* ChangePasswordViewController.swift */,
 				CD1A39892082726800D1CDE3 /* EditProfileViewController.swift */,
@@ -96,6 +104,7 @@
 				CDF1E3E1208191E500D38569 /* ForgotPswrdViewController.swift */,
 				CDF1E3DF208191BE00D38569 /* SignUpViewController.swift */,
 				CDB3EFC4207B237C00B7CC58 /* VVProfileViewController.swift */,
+				CDCB2D0A20997A9A007D7C97 /* NetBankingTableViewCell.swift */,
 				CD9CBC8C20777E5500054D2A /* LaunchScreen.storyboard */,
 				CD347BF12094E07600C3748E /* Assets.xcassets */,
 				CD9CBC8F20777E5500054D2A /* Info.plist */,
@@ -187,7 +196,10 @@
 				CD1760D320845E0D0018D772 /* ChangePasswordViewController.swift in Sources */,
 				CDF1E3E42081922400D38569 /* HomepageViewController.swift in Sources */,
 				CD1A39822082358400D1CDE3 /* ResultsViewController.swift in Sources */,
+				CD1C89A0209A1A6600E7CCA9 /* CardCellTableViewCell.swift in Sources */,
 				CD1A398A2082726800D1CDE3 /* EditProfileViewController.swift in Sources */,
+				CD1C89A2209A27ED00E7CCA9 /* PhonePeTableViewCell.swift in Sources */,
+				CDCB2D0B20997A9A007D7C97 /* NetBankingTableViewCell.swift in Sources */,
 				CDF1E3E0208191BE00D38569 /* SignUpViewController.swift in Sources */,
 				CDF1E3E2208191E500D38569 /* ForgotPswrdViewController.swift in Sources */,
 				CD9CBC8420777E5500054D2A /* AppDelegate.swift in Sources */,

@@ -17,33 +17,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        userName.text = "avu@gmail.com"
-        password.text = "123456789"
-        self.title = "VVISM"
+//        userName.text = "avu@gmail.com"
+//        password.text = "123456789"
+//        self.title = "VVISM"
     }
   
     //MARK:login Action
     @IBAction func login(_ sender: Any) {
-        /*
-        label.isHidden = true
-        guard let  txtUsername = userName.text, userName.text?.characters.count != 0 else {
-            label.isHidden = false
-            label.text = "plz enter your email"
-            return
-        }
-
-        if isValidEmail(emailID: txtUsername) == false {
-
-            label.isHidden = false
-            label.text = "plz enter Valid  password"
-        }
-        
-        guard let  txtpassword = password.text, password.text?.characters.count != 0 else {
-            label.isHidden = false
-            label.text = "plz enter your password"
-            return
-        }
- */
+ 
         
         
         if let textUserName = userName.text, textUserName.count != 0 {
@@ -80,6 +61,7 @@ class ViewController: UIViewController {
         }
 
     }
+    //MARK: Validation Email
     func isValidEmailAddress(emailAddressString: String) -> Bool {
         
         var returnValue = true

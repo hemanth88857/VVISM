@@ -892,6 +892,9 @@ Job Types: Full-time, Fresher
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="swq-3m-eeL">
+                                <rect key="frame" x="0.0" y="520" width="414" height="216"/>
+                            </pickerView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="VVISM_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="KJC-EI-ich">
                                 <rect key="frame" x="0.0" y="64" width="414" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -917,7 +920,7 @@ Job Types: Full-time, Fresher
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.97109001874923706" green="0.94196456670761108" blue="0.90166658163070679" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cardCell" rowHeight="135" id="g8g-dU-gGf">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cardCell" rowHeight="135" id="g8g-dU-gGf" customClass="CardCellTableViewCell" customModule="VVISM" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="188" width="414" height="135"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="g8g-dU-gGf" id="9He-Cs-2PC">
@@ -958,7 +961,7 @@ Job Types: Full-time, Fresher
                                                     <color key="backgroundColor" red="0.84492856791760063" green="1" blue="0.98802840057101537" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <state key="normal" title="PAY"/>
                                                     <connections>
-                                                        <segue destination="U7D-1a-YIn" kind="show" id="dmY-Ca-Xpi"/>
+                                                        <action selector="CardCellAction:" destination="g8g-dU-gGf" eventType="touchUpInside" id="oId-yD-Q3x"/>
                                                     </connections>
                                                 </button>
                                                 <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RW4-WK-jSe">
@@ -966,7 +969,7 @@ Job Types: Full-time, Fresher
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                 </textField>
                                                 <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dY5-SC-h0K">
                                                     <rect key="frame" x="137" y="49" width="265" height="30"/>
@@ -1000,48 +1003,93 @@ Job Types: Full-time, Fresher
                                             <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.97109001874923706" green="0.94196456670761108" blue="0.90166658163070679" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="CVV" destination="x1V-pJ-1FI" id="mhn-Rd-BIz"/>
+                                            <outlet property="cardNumber" destination="RW4-WK-jSe" id="k8X-vx-sfh"/>
+                                            <outlet property="month" destination="cPf-Sg-feU" id="hiw-L3-9FS"/>
+                                            <outlet property="nameOnCard" destination="dY5-SC-h0K" id="h46-GF-HB3"/>
+                                            <outlet property="year" destination="y0G-n4-j2y" id="28T-Fm-hwx"/>
+                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NetBanking" rowHeight="121" id="Skf-Zx-Wmw">
-                                        <rect key="frame" x="0.0" y="323" width="414" height="121"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NetBanking" rowHeight="73" id="Skf-Zx-Wmw" customClass="NetBankingTableViewCell" customModule="VVISM" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="323" width="414" height="73"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Skf-Zx-Wmw" id="Wmm-BT-Vna">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="120.66666666666667"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="72.666666666666671"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="swq-3m-eeL">
-                                                    <rect key="frame" x="0.0" y="43" width="326" height="77"/>
-                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                                </pickerView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select Bank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P9F-57-mL4">
-                                                    <rect key="frame" x="20" y="0.0" width="124" height="25"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fdY-39-Hfl">
+                                                    <rect key="frame" x="5" y="5" width="404" height="30"/>
+                                                    <state key="normal" title="Select Bank"/>
+                                                    <connections>
+                                                        <action selector="selectBankAction:" destination="Skf-Zx-Wmw" eventType="touchUpInside" id="WIz-d0-edE"/>
+                                                    </connections>
+                                                </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="md8-s7-38c">
-                                                    <rect key="frame" x="334" y="67" width="71" height="28"/>
+                                                    <rect key="frame" x="323" y="36" width="71" height="28"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" red="0.84492856790000004" green="1" blue="0.98802840059999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <state key="normal" title="PAY"/>
                                                 </button>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="fdY-39-Hfl" firstAttribute="leading" secondItem="Wmm-BT-Vna" secondAttribute="leading" constant="5" id="2JV-sj-8Xs"/>
+                                                <constraint firstItem="fdY-39-Hfl" firstAttribute="top" secondItem="Wmm-BT-Vna" secondAttribute="top" constant="5" id="BGC-cF-EfF"/>
+                                                <constraint firstAttribute="trailing" secondItem="fdY-39-Hfl" secondAttribute="trailing" constant="5" id="FNb-tw-WBo"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.97109001874923706" green="0.94196456670761108" blue="0.90166658163070679" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="selectBankButton" destination="fdY-39-Hfl" id="Con-Jx-OcE"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PhonePe" rowHeight="80" id="Nto-af-d8t" customClass="PhonePeTableViewCell" customModule="VVISM" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="396" width="414" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Nto-af-d8t" id="E7V-Qu-8xD">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="79.666666666666671"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Flipkart_com__Secure_Payment__Login___Select_Shipping_Address___Review_Order___Place_Order" translatesAutoresizingMaskIntoConstraints="NO" id="Qkb-tM-eO1">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="38"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gX2-ji-2Ww">
+                                                    <rect key="frame" x="0.0" y="46" width="414" height="33"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.93190175294876099" green="0.98041433095932007" blue="0.96342760324478149" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <state key="normal" title="Continue">
+                                                        <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="phonePe:" destination="Nto-af-d8t" eventType="touchUpInside" id="6JB-9Y-sbr"/>
+                                                        <action selector="phonePeAction:" destination="r2U-4M-03p" eventType="touchUpInside" id="x70-8c-o3S"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.97533148527145386" green="0.9534415602684021" blue="0.93091076612472534" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="PXO-cV-S64" firstAttribute="bottom" secondItem="swq-3m-eeL" secondAttribute="bottom" id="90x-XI-m5m"/>
+                            <constraint firstItem="swq-3m-eeL" firstAttribute="trailing" secondItem="PXO-cV-S64" secondAttribute="trailing" id="PuI-Sa-shB"/>
+                            <constraint firstItem="swq-3m-eeL" firstAttribute="leading" secondItem="PXO-cV-S64" secondAttribute="leading" id="jtd-GI-hHK"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="PXO-cV-S64"/>
                     </view>
                     <connections>
                         <outlet property="finalPaymentTableView" destination="yPc-MQ-voh" id="GWH-bQ-9lS"/>
+                        <outlet property="netBankingPicker" destination="swq-3m-eeL" id="BZr-pH-9pN"/>
+                        <segue destination="U7D-1a-YIn" kind="show" id="gou-rd-TAX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XkH-hQ-dLh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="r2U-4M-03p" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-757.97101449275374" y="1382.608695652174"/>
+            <point key="canvasLocation" x="-759.4202898550725" y="1381.7934782608697"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="b4n-Jo-dAF">
@@ -1329,6 +1377,7 @@ B.Hemanth Kumar.</string>
         </scene>
     </scenes>
     <resources>
+        <image name="Flipkart_com__Secure_Payment__Login___Select_Shipping_Address___Review_Order___Place_Order" width="733" height="28"/>
         <image name="Screenshot_2016-08-07-08-42-30_1" width="735" height="959"/>
         <image name="VVISM_Logo" width="456" height="205"/>
         <image name="error_1" width="592" height="199"/>
